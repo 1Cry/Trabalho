@@ -269,7 +269,7 @@ img {
 
 .creditosN h3 {
   font-family: "Poppins", sans-serif;
-  top: 275px;
+  top: 315px;
   left: calc(1%);
   width: 250px;
   position: relative;
@@ -280,7 +280,7 @@ img {
 
 .insta li {
   font-family: "Poppins", sans-serif;
-  top: 260px;
+  top: 300px;
   left: calc(0%);
   position: relative;
   z-index: 2;
@@ -292,6 +292,17 @@ img {
   color: rgb(46, 46, 46);
   text-decoration: none;
 }
+
+.invisible {
+  width: calc(91.4%);
+  height: calc(225%);
+  background-color: solid transparent;
+  position: absolute;
+  left: calc(8.6%);
+  top: 0px;
+  z-index: 2;
+}
+
 
 .copyrightC p {
   position: absolute;
@@ -350,7 +361,7 @@ img {
   transition: all 0.2s ease-in;
   position: absolute;
   overflow: hidden;
-  z-index: 1;
+  z-index: 3;
   color: #090909;
   padding: 0.7em 1.7em;
   font-size: 14px;
@@ -407,6 +418,75 @@ img {
 }
 
 .button2:hover:after {
+  top: -45%;
+  background-color: #f78c46;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button3 {
+  right: calc(1.5%);
+  top: calc(12.5%);
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  overflow: hidden;
+  z-index: 3;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 14px;
+  border-radius: 0.5em;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button3:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button3:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button3:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #f78c46;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button3:hover {
+  color: #ffffff;
+  border: 1px solid #f78c46;
+}
+
+.button3:hover:before {
+  top: -35%;
+  background-color: #f78c46;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button3:hover:after {
   top: -45%;
   background-color: #f78c46;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
